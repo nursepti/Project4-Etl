@@ -15,7 +15,7 @@ try:
 
     # =========== Write data to Postgresql =================
     #INPUT YOUR OWN CONNECTION STRING HERE
-    conn_string = 'postgresql://postgres:postgres@localhost/data_warehouse'
+    conn_string = 'postgresql+psycopg2://postgres:postgres@localhost:5433/data_warehouse'
 
     #perform to_sql test and print result
     db = create_engine(conn_string)

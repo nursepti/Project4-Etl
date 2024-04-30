@@ -19,7 +19,9 @@ services:
     image: postgres:11
     container_name: db-postgres
     environment:
+      POSTGRES_ROOT_PASSWORD: postgres
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: data_warehouse #automatically create database
     ports:
-      - "5432:5432"
+      - "5433:5432" #local:docker because my usual port have problems to connect
