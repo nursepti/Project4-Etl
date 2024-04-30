@@ -1,4 +1,8 @@
 # Project4-Etl
+
+# Background Project
+Melakukan proses etl dari mysql ke postgres di dalam Docker enviroment dengan menggunakan python. Kita mempunyai sebuah data yang akan kita load ke mysql lalu kita replika ke postgres sql.
+
 # Tools
 1. Docker: https://docs.docker.com/desktop/install/windows-install/
 2. Python
